@@ -1,0 +1,25 @@
+<div class="subject-panel" id="subject-panel">
+  <ul class="subject-list">
+    <% site.categories.forEach(function(category) { %>
+      <% if (category.name == page.category) { %>
+        <li class="subject active">
+          <a href="<%- url_for(category.path) %>">
+            <%- category.name %>
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      <% } else { %>
+        <li class="subject">
+          <a href="<%- url_for(category.path) %>">
+            <%- category.name %>
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      <% }%>
+    <% }) %>
+  </ul>
+</div>

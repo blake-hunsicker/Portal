@@ -1,0 +1,128 @@
+<div class="explainer-group">
+  <div class="panel-header">
+    <div class="label">
+      About North Korea
+    </div>
+  </div>
+  <div class="explainer-list">
+    <div class="sec">
+      <div class="sec-title">
+        <div class="label">
+          Primer
+        </div>
+        <div class="icon">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </div>
+      <div class="sec-group open">
+        <ul>
+          <li>North Korea is a small nation near China, Japan, and Russia. It has lived under the Kim family dictatorship since 1948.</li>
+          <li>North and South Korea, historically one country, were partitioned by the US and Soviet Union at the end of WWII. The US supported a Princeton-educated Korean activist named Synghman Rhee in the South, and the Soviet Union installed communist guerilla Kim Il-Sung in Pyongyang.</li>
+          <li>The US-led UN coalition fought the North Korean and Chinese armies in the Korean War (1950-1953), which ended in a stalemate. Tensions have been high ever since.</li>
+          <li>Following the disolution the Soviet Union, North Korea plummeted into famine. Since then, China has become its main trade partner.</li>
+          <li>Kim Jong-Il began the North's nuclear program as a defense against the prospect of US or South Korean invasion. Kim Jong-Un claims that the nuclear program he inherited is the country's best defense against potential Western intervention.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-title">
+        <div class="label">
+          The negotiators
+        </div>
+        <div class="icon">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </div>
+      <div class="sec-group open">
+        <% site.tags.findOne({name: 'Peace negotiator'}).posts.each(function(bio) { %>
+          <div class="explainer">
+            <div class="explainer-hed">
+              <img src="<%- url_for(bio.path) %>/headshot.png">
+              <div class="title">
+                <%- bio.offhandtitle %>
+              </div>
+            </div>
+            <div class="explainer-body">
+              <%- bio.content %>
+              <div class="explainer-append-button">
+                Open full Bio
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-title">
+        <div class="label">
+          Historical figures
+        </div>
+        <div class="icon">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+      <div class="sec-group closed">
+        <% site.tags.findOne({name: 'Historical figure'}).posts.each(function(historicalbio) { %>
+          <div class="explainer">
+            <div class="explainer-hed">
+              <img src="<%- url_for(historicalbio.path) %>/headshot.png">
+              <div class="title">
+                <%- historicalbio.offhandtitle %>
+              </div>
+            </div>
+            <div class="explainer-body">
+              <%- historicalbio.content %>
+              <div class="explainer-append-button">
+                Go deeper
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="explainer-list">
+    <div class="sec-hed">
+      <div class="label">
+        General background
+      </div>
+      <div class="icon">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+    <div class="sec-explainers">
+      <% site.tags.findOne({name: 'Background'}).posts.each(function(backgrounder) { %>
+        <div class="explainer">
+          <div class="explainer-title">
+            <%- backgrounder.offhandtitle %>
+          </div>
+          <div class="explainer-body">
+            <%- backgrounder.content %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+  <div class="explainer-list">
+    <div class="sec-hed">
+      <div class="label">
+        Deep waters
+      </div>
+      <div class="icon">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+    <div class="sec-explainers">
+      <% site.tags.findOne({name: 'Deep background'}).posts.each(function(sturgeon) { %>
+        <div class="explainer">
+          <div class="explainer-title">
+            <%- sturgeon.offhandtitle %>
+          </div>
+          <div class="explainer-body">
+            <%- sturgeon.content %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div> -->
+</div>

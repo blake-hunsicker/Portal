@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Conejo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/conejo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+  <body>
+      <div class="header">
+        <div class="nav">
+  Portal / <a href="/">Korea news</a>
+</div>
+
+      </div>
+      <div>
+  <h4>north-korea-and-the-state-sponsor-of-terrorism-list</h4>
+  <p>The US’s <a href="https://www.state.gov/j/ct/list/c14151.htm" target="_blank" rel="noopener">State Sponsors of Terror list</a>, which imposes strict sanctions on designated countries, currently lists Iran, Syria, Sudan and North Korea. It was originally drafted in 1979. North Korea has a storied history as a member:</p>
+<p><strong>On</strong></p>
+<p>North Korea was first put on the list in 1988 because, among other actions, it:</p>
+<ul>
+<li>Carried out an assassination attempt against then-South Korean president Chun Doo-hwan in Rangoon, Burma in October, 1983. It is known as the Rangoon bombing. 21 people died.</li>
+<li>Bombed a passenger flight between Baghdad and Seoul in November, 1987. 115 people died.</li>
+</ul>
+<p><strong>Off</strong></p>
+<p>President George W. Bush removed North Korea from the list in 2008.</p>
+<p><strong>Back on</strong></p>
+<p>President Trump re-added North Korea in November, 2017. Below are some events leading up to Trump’s decision to re-add the county:</p>
+<ul>
+<li>The alleged state-sponsored murder of Un’s half brother, Kim Jong-nam. Nam was poisoned with the nerve agent VX in Malaysia.</li>
+<li>The North Korean government launched a missile that flew directly over Hokkaido, Japan in August, 2017.</li>
+</ul>
+
+  <h6>Tue May 01 2018 17:48:52 GMT-0400</h6>
+  <h6>Tue May 01 2018 17:48:52 GMT-0400</h6>
+</div>
+
+      <div class="footer">
+        <div class="copyright">Copyright 2018 - Gracie Lou</div>
+
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

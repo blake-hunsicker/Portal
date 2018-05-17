@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- partial('_partial/head') %>
+  <body>
+      <div class="header">
+        <%- partial('_partial/header') %>
+      </div>
+      <%- body %>
+      <div class="footer">
+        <%- partial('_partial/footer') %>
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

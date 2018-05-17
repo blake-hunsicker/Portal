@@ -1,0 +1,5 @@
+<h5>Latest news</h5>
+<% site.categories.findOne({name:'Developing'}).posts.each(function(post) { %>
+  <div class="hed-title"><%- post.offhandtitle %></div>
+  <!-- <%- post.content %> -->
+<% }) %>

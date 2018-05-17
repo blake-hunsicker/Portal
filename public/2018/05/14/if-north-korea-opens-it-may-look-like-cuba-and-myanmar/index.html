@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Conejo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/conejo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+  <body>
+      <div class="header">
+        <div class="nav">
+  Portal / <a href="/">Korea news</a>
+</div>
+
+      </div>
+      <div>
+  <h4>if-north-korea-opens-it-may-look-like-cuba-and-myanmar</h4>
+  <img src="/2018/05/14/if-north-korea-opens-it-may-look-like-cuba-and-myanmar/hed.jpg">
+<p><strong>Myanmar:</strong> President Obama lifted most sanctions against Myanmar in 2015. Since then, lorem ispum dolor. At the same time the country underwent its first democratic elections, the military led a crackdown against Muslim and Christian minority groups.</p>
+<p><strong>Cuba:</strong> Since reestablishing diplomatic relations in 2015, relations have not improved between the US and Cuba. Lorem ispum dolor. The United States recently accused Cuba of attacking the US Embassy in Havana with “an acoustic device” that sickened 22 US Diplomats.</p>
+<p><strong>Iran:</strong> The United States formally began easing sanctions on Iran after the 2015 nuclear deal. President Trump pulled out of the deal last week. Analysts worry that this move will antagonize his efforts to broker peace with North Korea.</p>
+
+  <h6>Mon May 14 2018 17:25:17 GMT-0400</h6>
+  <h6>Mon May 14 2018 17:25:17 GMT-0400</h6>
+</div>
+
+      <div class="footer">
+        <div class="copyright">Copyright 2018 - Gracie Lou</div>
+
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

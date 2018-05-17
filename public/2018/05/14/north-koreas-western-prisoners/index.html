@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Conejo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/conejo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+  <body>
+      <div class="header">
+        <div class="nav">
+  Portal / <a href="/">Korea news</a>
+</div>
+
+      </div>
+      <div>
+  <h4>north-koreas-western-prisoners</h4>
+  <img src="/2018/05/14/north-koreas-western-prisoners/hed.jpg">
+
+  <h6>Mon May 14 2018 15:52:43 GMT-0400</h6>
+  <h6>Mon May 14 2018 15:52:43 GMT-0400</h6>
+</div>
+
+      <div class="footer">
+        <div class="copyright">Copyright 2018 - Gracie Lou</div>
+
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

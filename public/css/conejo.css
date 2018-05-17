@@ -1,0 +1,330 @@
+/* Layout */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.75)), url(https://i.imgur.com/h7htSSL.jpg);
+}
+.hero-title {
+  grid-column: span 12;
+  grid-row: 2;
+  color: #FFF;
+  text-align: center;
+  margin-top:40px;
+}
+.latest {
+  grid-column: 4 / 10;
+  grid-row: 3;
+  color: #FFF;
+}
+.hed-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.scroll-instruction {
+  grid-column: span 12;
+  grid-row: 4;
+  color: #FFF;
+  text-align: center;
+}
+.header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+  background: #FFFFFF;
+}
+.well-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+.story-well {
+  grid-column: 2 / 8;
+  grid-row: 6;
+  align-self: flex-start;
+  /* margin-top: 20px; */
+}
+.explainer-panel {
+  grid-column: 9 / 13;
+  grid-row: 6 / 8;
+  background: #FFFFFF;
+  border-left: 1px solid #CCCCCC;
+}
+.footer {
+  grid-column: span 12;
+  grid-row: 9;
+  padding: 20px 10px;
+  border-top:1px solid #CCCCCC;
+}
+
+/* Top level */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F5F5F5;
+  margin: 0px;
+}
+
+.nav {
+  position: fixed;
+  text-align: center;
+  color: #FFF;
+  padding: 10px;
+  background:#222;
+  width: 100%;
+}
+.nav a {
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+.well-title {
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 40px;
+}
+
+.panel-header {
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding: 20px 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #CCC;
+}
+.sec {
+  padding: 10px 0px 0px;
+  border-bottom: 1px solid #CCC;
+}
+
+.sec-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px 20px;
+}
+.sec-title :hover {
+  cursor: pointer;
+}
+.sec-title .label {
+  display: flex;
+}
+.sec-title .icon {
+  display: flex;
+}
+
+.sec-explainers {
+  display: none;
+}
+.sec-explainers.open {
+  display: block;
+}
+
+.explainer-list {
+  /* border-bottom: 1px solid #CCC; */
+}
+.sec-group {
+  display: none;
+}
+.sec-group ul {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.explainer {
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0px 20px;
+}
+.explainer:last-child {
+  border-bottom: none;
+}
+.explainer-hed {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding:20px 0px 20px;
+}
+.explainer-hed:hover {
+  cursor:pointer;
+}
+
+.explainer-hed > img {
+  display: flex;
+  max-height: 70px;
+  margin-right: 20px;
+}
+.explainer-hed:hover > img {
+  max-height:75px;
+}
+.explainer-hed .title {
+  display: flex;
+  /* align-items: center; */
+}
+.explainer-body {
+  display: none;
+  margin-bottom: 20px;
+}
+.explainer-body p {
+  margin-top: 0px;
+}
+.explainer-body.open {
+  display: block;
+}
+
+.explainer-append-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  background: #336699;
+  padding: 8px;
+  width: 50%;
+  align-self: center;
+  border-radius: 4px;
+}
+
+/* breaking */
+.breaking-kicker {
+  /* border-bottom: 2px solid blue; */
+}
+.sub-hed {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Biography */
+.bio-kicker {
+  padding: 20px 0px 0px 20px;
+}
+
+.bio-kicker img {
+  max-width:30px;
+}
+.bio-details {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.bio-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.bio-position {
+  font-family: 'Open Sans', sans-serif;
+  /* font-weigh3t: 700; */
+}
+/* Posts */
+
+.most-important-right-now {
+  /* border-bottom: 1px solid #CCCCCC; */
+  margin-bottom: 40px;
+}
+
+.post-container {
+  margin-bottom: 60px;
+}
+.post {
+  border: 1px solid #C0C0C0;
+  border-radius: 4px;
+  background: #FFFFFF;
+  margin-top: 60px;
+}
+.post-type-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: 12px;
+  background: #EEEEEE;
+  padding: 10px 20px;
+  margin: 0px;
+}
+.post-type {
+  display: flex;
+}
+.post-meta {
+  display: flex;
+  /* padding: 10px 0px; */
+}
+.post-content {
+  padding: 20px 0px 10px;
+}
+.post-title {
+  font-family: "Roboto";
+  /* font-weight:bold; */
+  font-size: 20px;
+  color: #313638;
+  padding: 0px 20px 0px 20px;
+  margin-bottom:20px;
+}
+.post-content p {
+  color: #313638;
+  padding: 0px 20px 0px 20px;
+}
+.title a {
+  text-decoration: none;
+  color: #313638;
+}
+
+.related-posts-container {
+ border-left: 2px solid #DDD;
+ margin-top: 20px;
+}
+.related-kicker {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #313638;
+}
+.related-instruction {
+  color: #555;
+  font-weight: normal;
+  margin: 0px 0px 20px 0px;
+}
+.related-top {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.related-title {
+  display: flex;
+}
+.related-top .fas {
+  display: flex;
+}
+.related-post {
+  border: 1px solid #DDD;
+  border-radius: 2px;
+  background: #F9F9F9;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+.related-post:hover {
+  border: 1px solid #C0C0C0;
+}
+.related-post-content {
+}
+.active {
+  /* border: 1px solid #C0C0C0; */
+}
+.attachment-content :hover {
+  cursor: pointer;
+}
+.attachment-content :active {
+  background: #CCCCCC;
+}
+.attachment-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+}
+.related-post-content {
+  display: none;
+}
+.open {
+  display: block;
+}

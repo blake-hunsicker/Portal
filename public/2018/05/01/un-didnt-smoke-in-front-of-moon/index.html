@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Conejo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/conejo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+  <body>
+      <div class="header">
+        <div class="nav">
+  Portal / <a href="/">Korea news</a>
+</div>
+
+      </div>
+      <div>
+  <h4>un-didnt-smoke-in-front-of-moon</h4>
+  <p>Kim, a voracious smoker, abstained from smoking during his meeting with South Korean president Moon during their meeting in late April.</p>
+
+  <h6>Tue May 01 2018 17:25:41 GMT-0400</h6>
+  <h6>Tue May 01 2018 17:25:41 GMT-0400</h6>
+</div>
+
+      <div class="footer">
+        <div class="copyright">Copyright 2018 - Gracie Lou</div>
+
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

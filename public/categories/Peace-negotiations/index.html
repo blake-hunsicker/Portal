@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Conejo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/conejo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+  <body>
+      <div class="header">
+        <div class="nav">
+  Portal / <a href="/">Korea news</a>
+</div>
+
+      </div>
+      <div class="subject-panel" id="subject-panel">
+  <ul class="subject-list">
+    
+      
+        <li class="subject">
+          <a href="/categories/Developing/">
+            Developing
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/Series-sec/">
+            Series-sec
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/North-Korea-and-the-United-States/">
+            North Korea and the United States
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/North-Korea-and-the-outside-world/">
+            North Korea and the outside world
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/The-history-of-North-Korea-s-nuclear-program/">
+            The history of North Korea's nuclear program
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/Series-hed/">
+            Series-hed
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/Previous-negotiations-with-North-Korea/">
+            Previous negotiations with North Korea
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/North-Korea-s-cyberpower/">
+            North Korea's cyberpower
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/Otto-Warmbier/">
+            Otto Warmbier
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject">
+          <a href="/categories/North-Korea-s-prisoners/">
+            North Korea's prisoners
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+      
+        <li class="subject active">
+          <a href="/categories/Peace-negotiations/">
+            Peace negotiations
+            <div class="subject-meta">
+              <span class="updated-timestamp">Updated May 1, 2018</span>
+            </div>
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+<div class="story-well">
+  
+    <div class="post">
+      
+          
+          
+      
+      <div class="post-content">
+        <div class="post-title">Kim didn't smoke during negotiations with South Korea</div>
+        <p>Kim, a voracious smoker, abstained from smoking during his meeting with South Korean president Moon during their meeting in late April.</p>
+
+      </div>
+    </div>
+  
+</div>
+
+      <div class="footer">
+        <div class="copyright">Copyright 2018 - Gracie Lou</div>
+
+      </div>
+    <script>
+        $('.explainer-hed').click(function() {
+          $(this).next('.explainer-body').toggleClass('open');
+        });
+        $('.sec-title').click(function() {
+          $(this).find('.fas').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          $(this).next('.sec-group').toggleClass('open');
+        });
+
+        $('.related-top').click(function() {
+          $(this).find('.fas').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+          $(this).next('.related-post-content').toggleClass('open');
+        });
+
+        // $('.related-top').on('mouseover', function() {
+        //   $(this).parent('.related-post').addClass('active');
+        // }).on('mouseout', function() {
+        //   $(this).parent('.related-post').removeClass('active');
+        // })
+    </script>
+  </body>
+</html>

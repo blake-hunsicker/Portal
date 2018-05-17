@@ -1,0 +1,28 @@
+<%- partial('_partial/categories') %>
+<div class="story-well">
+  <% page.posts.forEach(function(post){ %>
+    <div class="post">
+      <% post.categories.forEach(function(subject) { %>
+          <% if (subject.name === "Biographies") { %>
+            <div class="bio-kicker">
+              <img src="<%- url_for(post.path) %>/headshot.png">
+              <div class="bio-details">
+                <div class="bio-name"><%- post.bioname %></div>
+                <div class="bio-position"><%- post.biopos %></div>
+              </div>
+            </div>
+          <% } else if (subject.name === "Breaking") { %>
+            <div class="post-type-header">
+              <%- post.date %>
+            </div>
+          <% } else if (subject.name === "Background") { %>
+          <% } else { %>
+          <% }%>
+      <% }) %>
+      <div class="post-content">
+        <div class="post-title"><%- post.offhandtitle %></div>
+        <%- post.content %>
+      </div>
+    </div>
+  <% }) %>
+</div>

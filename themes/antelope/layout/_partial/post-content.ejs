@@ -1,0 +1,90 @@
+<div class="most-important-right-now">
+  <% site.categories.findOne({name:'Developing'}).posts.each(function(post) { %>
+    <div class="post-container">
+      <div class="post">
+        <!-- <%- partial('_partial/post/developing-header') %> -->
+        <div class="post-content">
+          <div class="post-title"><%- post.offhandtitle %></div>
+          <%- post.content %>
+        </div>
+      </div>
+      <div class="attachment-container">
+          <% post.categories.forEach(function(referencecategory) { %>
+            <% if (referencecategory.name == "Developing") { %>
+
+            <% } else { %>
+              <% site.categories.findOne({name:referencecategory.name}).posts.each(function(attachmentpost) { %>
+                <% if (attachmentpost.offhandtitle == post.offhandtitle) { %>
+
+                <% } else { %>
+                  <% attachmentpost.tags.forEach(function(attachmenttag) { %>
+                    <% post.tags.forEach(function(originaltag) { %>
+                      <% if (originaltag.name == attachmenttag.name) { %>
+                        <div class="related-post">
+                          <div class="related-kicker">
+                            <% if (attachmenttag.name == "Series") { %>
+                              Go deep
+                            <% } else { %>
+                            <% } %>
+                          </div>
+                          <div class="related-top">
+                            <div class="related-title">
+                              <%- attachmentpost.offhandtitle %>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                          </div>
+                          <div class="related-post-content">
+                            <%- attachmentpost.content %>
+                              <% if (attachmenttag.name == "Series") { %>
+                                <div class="explainer-append-button">
+                                  Open this topic
+                                </div>
+                              <% } else { %>
+                              <% } %>
+                          </div>
+                        </div>
+                      <% } %>
+                    <% }) %>
+
+                  <% }) %>
+                <% } %>
+              <% }) %>
+            <% } %>
+          <% }) %>
+        </div>
+    </div>
+  <% }) %>
+</div>
+<div class="series">
+  <h3 class="well-title">Go Deep</h3>
+  <% site.categories.findOne({name:'Series-hed'}).posts.each(function(hedseriespost) { %>
+    <div class="post">
+      <div class="post-type-header">
+        <div class="post-type">
+          Topic
+        </div>
+        <%- partial('_partial/post/meta') %>
+      </div>
+      <div class="post-content">
+        <div class="post-title"><%- hedseriespost.offhandtitle %></div>
+        <%- hedseriespost.content %>
+      </div>
+    </div>
+    <% site.categories.findOne({name:hedseriespost.series}).posts.each(function(seriespost) {%>
+      <% if (seriespost.title == hedseriespost.title) { %>
+      <% } else { %>
+        <div class="related-post">
+          <div class="related-top">
+            <div class="related-title">
+              <%- seriespost.offhandtitle %>
+            </div>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="related-post-content">
+            <%- seriespost.content %>
+          </div>
+        </div>
+      <% } %>
+    <% }) %>
+  <% }) %>
+</div>
